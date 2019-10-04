@@ -32,7 +32,9 @@ namespace COMP229_F2019_SportsStore
             app.UseStaticFiles();
             app.UseMvc(routes => 
             {
-
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Product}/{action=List}/{id?}");
             });
         }
     }

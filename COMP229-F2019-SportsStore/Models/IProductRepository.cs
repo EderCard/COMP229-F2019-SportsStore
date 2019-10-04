@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace COMP229_F2019_SportsStore.Models
 {
-    interface IProductRepository
+    public interface IProductRepository
     {
         IQueryable<Product> Products { get; }
     }

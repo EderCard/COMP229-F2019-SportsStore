@@ -13,13 +13,13 @@ namespace COMP229_F2019_SportsStore.Controllers
         private IProductRepository repository;
         public int PageSize = 4;
 
-        public ProductController(IProductRepository repository)
+        public ProductController(IProductRepository repo)
         {
-            this.repository = repository;
+            repository = repo;
         }
 
-        public ViewResult List(int productPage = 1) => 
-            View(new ProductListViewModel
+        public ViewResult List(int productPage = 1)
+            => View(new ProductsListViewModel
             {
                 Products = repository.Products
                     .OrderBy(p => p.ProductId)
@@ -30,8 +30,8 @@ namespace COMP229_F2019_SportsStore.Controllers
                     CurrentPage = productPage,
                     ItemsPerPage = PageSize,
                     TotalItems = repository.Products.Count()
-
                 }
             });
     }
 }
+

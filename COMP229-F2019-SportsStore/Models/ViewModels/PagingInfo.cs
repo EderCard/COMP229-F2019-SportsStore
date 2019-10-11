@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace COMP229_F2019_SportsStore.Models.ViewModels
-{
+{ 
     public class PagingInfo
     {
         public int TotalItems { get; set; }

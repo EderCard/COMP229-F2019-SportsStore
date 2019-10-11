@@ -16,6 +16,7 @@ namespace COMP229_F2019_SportsStore.Models
 
             context.Database.Migrate();
 
+
             if(!context.Products.Any())
             {
                 context.Products.AddRange(

@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>COMP229_F2019_SportsStore</AssemblyName>
+    <RootNamespace>COMP229_F2019_SportsStore</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -10,5 +10,6 @@ namespace COMP229_F2019_SportsStore.Models.ViewModels
     {
         public IEnumerable<Product> Products { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public string CurrentCategory { get; set; }
     }
 }

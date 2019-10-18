@@ -23,7 +23,7 @@ namespace COMP229_F2019_SportsStore.Controllers
             {
                 Products = repository.Products
                     .Where(p => category == null || p.Category == category)
-                    .OrderBy(p => p.ProductId)
+                    .OrderBy(p => p.ProductID)
                     .Skip((productPage - 1) * PageSize)
                     .Take(PageSize),
                 PagingInfo = new PagingInfo
